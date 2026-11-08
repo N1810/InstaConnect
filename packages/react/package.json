@@ -1,0 +1,47 @@
+{
+  "name": "@instaconnect/react",
+  "version": "1.0.0",
+  "description": "Accessible React components and headless hooks for Instagram feeds, Reels, and profiles",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --external react,react-dom,@instaconnect/core",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --external react,react-dom,@instaconnect/core",
+    "test": "vitest run --dir ../../tests/react",
+    "test:coverage": "vitest run --coverage --dir ../../tests/react",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --config ../../eslint.config.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\""
+  },
+  "dependencies": {
+    "@instaconnect/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "keywords": [
+    "instagram",
+    "react",
+    "hooks",
+    "components",
+    "instagram-feed",
+    "reels"
+  ],
+  "license": "MIT"
+}
+

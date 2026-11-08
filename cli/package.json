@@ -1,0 +1,32 @@
+{
+  "name": "instaconnect",
+  "version": "1.0.0",
+  "description": "CLI initializer and project setup tool for InstaConnect SDK",
+  "type": "module",
+  "bin": {
+    "instaconnect": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest run --dir ../tests/cli",
+    "test:coverage": "vitest run --coverage --dir ../tests/cli",
+    "lint": "eslint \"src/**/*.ts\" --config ../eslint.config.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\""
+  },
+  "keywords": [
+    "instagram",
+    "cli",
+    "nextjs",
+    "instaconnect"
+  ],
+  "license": "MIT"
+}
+

@@ -1,0 +1,7 @@
+import { createInstagramProfileHandler } from "@instaconnect/next/server";
+import { getInstagramServerClient } from "@/lib/instagram";
+
+export const GET = createInstagramProfileHandler({
+  client: getInstagramServerClient()
+});
+
