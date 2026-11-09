@@ -11,5 +11,5 @@ export {
   InstagramReels,
   InstagramProfile,
   InstagramConnectButton
-} from "@instaconnect/react";
+} from "@neerajkr1810/instaconnect-react";
 

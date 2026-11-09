@@ -65,13 +65,13 @@ importers:
 
   apps/demo:
     dependencies:
-      '@instaconnect/core':
+      '@neerajkr1810/instaconnect-core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@instaconnect/next':
+      '@neerajkr1810/instaconnect-next':
         specifier: workspace:*
         version: link:../../packages/next
-      '@instaconnect/react':
+      '@neerajkr1810/instaconnect-react':
         specifier: workspace:*
         version: link:../../packages/react
       next:
@@ -112,10 +112,10 @@ importers:
 
   packages/next:
     dependencies:
-      '@instaconnect/core':
+      '@neerajkr1810/instaconnect-core':
         specifier: workspace:*
         version: link:../core
-      '@instaconnect/react':
+      '@neerajkr1810/instaconnect-react':
         specifier: workspace:*
         version: link:../react
       next:
@@ -130,7 +130,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@instaconnect/core':
+      '@neerajkr1810/instaconnect-core':
         specifier: workspace:*
         version: link:../core
       react:

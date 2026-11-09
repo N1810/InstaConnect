@@ -1,4 +1,4 @@
-import { InstagramClient, MemoryCacheAdapter, MemoryTokenStorageAdapter } from "@instaconnect/core";
+import { InstagramClient, MemoryCacheAdapter, MemoryTokenStorageAdapter } from "@neerajkr1810/instaconnect-core";
 
 /**
  * Shared singleton storage & cache for the Next.js server environment.

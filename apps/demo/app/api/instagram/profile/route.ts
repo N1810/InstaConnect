@@ -1,4 +1,4 @@
-import { createInstagramProfileHandler } from "@instaconnect/next/server";
+import { createInstagramProfileHandler } from "@neerajkr1810/instaconnect-next/server";
 import { getInstagramServerClient } from "@/lib/instagram";
 
 export const GET = createInstagramProfileHandler({

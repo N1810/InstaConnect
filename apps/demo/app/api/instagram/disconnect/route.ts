@@ -1,4 +1,4 @@
-import { createInstagramDisconnectHandler } from "@instaconnect/next/server";
+import { createInstagramDisconnectHandler } from "@neerajkr1810/instaconnect-next/server";
 import { getInstagramServerClient } from "@/lib/instagram";
 
 export const POST = createInstagramDisconnectHandler({
@@ -7,4 +7,3 @@ export const POST = createInstagramDisconnectHandler({
     console.info(`[InstaConnect] Disconnected Instagram account: ${accountId}`);
   }
 });
-

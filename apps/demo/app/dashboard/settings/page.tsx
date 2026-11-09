@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { InstagramConnectButton, useInstagramConnection } from "@instaconnect/react";
+import { InstagramConnectButton, useInstagramConnection } from "@neerajkr1810/instaconnect-react";
 
 export default function DashboardSettingsPage() {
   const { connected, profile, loading, disconnect } = useInstagramConnection();

@@ -5,7 +5,7 @@ import {
   type InstagramProfile,
   type InstagramScope,
   type InstagramTokenRecord
-} from "@instaconnect/core";
+} from "@neerajkr1810/instaconnect-core";
 
 export const OAUTH_STATE_COOKIE_NAME = "instaconnect_oauth_state";
 

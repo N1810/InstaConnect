@@ -3,7 +3,7 @@ import type {
   InstagramMedia,
   InstagramProfile,
   PaginatedResponse
-} from "@instaconnect/core";
+} from "@neerajkr1810/instaconnect-core";
 import { useInstagramConfig } from "../context/index.js";
 import type {
   UseInstagramConnectionOptions,

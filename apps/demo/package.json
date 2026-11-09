@@ -14,9 +14,9 @@
     "clean": "node -e \"fs.rmSync('.next', { recursive: true, force: true })\""
   },
   "dependencies": {
-    "@instaconnect/core": "workspace:*",
-    "@instaconnect/next": "workspace:*",
-    "@instaconnect/react": "workspace:*",
+    "@neerajkr1810/instaconnect-core": "workspace:*",
+    "@neerajkr1810/instaconnect-next": "workspace:*",
+    "@neerajkr1810/instaconnect-react": "workspace:*",
     "next": "^14.2.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

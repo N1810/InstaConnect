@@ -3,7 +3,7 @@ import type {
   InstagramMedia,
   InstagramProfile,
   PaginatedResponse
-} from "@instaconnect/core";
+} from "@neerajkr1810/instaconnect-core";
 
 /**
  * Configuration for the client-side InstaConnect React context.
@@ -159,4 +159,3 @@ export interface InstagramConnectButtonProps {
   style?: CSSProperties;
   disabled?: boolean;
 }
-

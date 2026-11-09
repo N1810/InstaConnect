@@ -1,5 +1,5 @@
 {
-  "name": "instaconnect",
+  "name": "@neerajkr1810/instaconnect",
   "version": "1.0.0",
   "description": "CLI initializer and project setup tool for InstaConnect SDK",
   "type": "module",
@@ -29,4 +29,3 @@
   ],
   "license": "MIT"
 }
-

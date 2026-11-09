@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@instaconnect/core", "@instaconnect/react", "@instaconnect/next"],
+  transpilePackages: [
+    "@neerajkr1810/instaconnect-core",
+    "@neerajkr1810/instaconnect-react",
+    "@neerajkr1810/instaconnect-next"
+  ],
   images: {
     remotePatterns: [
       {

@@ -1,5 +1,5 @@
 {
-  "name": "@instaconnect/core",
+  "name": "@neerajkr1810/instaconnect-core",
   "version": "1.0.0",
   "description": "Core framework-agnostic Instagram Graph & Login SDK",
   "type": "module",

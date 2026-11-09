@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { InstagramFeed, InstagramReels } from "@instaconnect/react";
+import { InstagramFeed, InstagramReels } from "@neerajkr1810/instaconnect-react";
 
 export default function DashboardFeedPage() {
   const [activeTab, setActiveTab] = useState<"all" | "reels">("all");

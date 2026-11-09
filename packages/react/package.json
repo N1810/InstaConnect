@@ -1,5 +1,5 @@
 {
-  "name": "@instaconnect/react",
+  "name": "@neerajkr1810/instaconnect-react",
   "version": "1.0.0",
   "description": "Accessible React components and headless hooks for Instagram feeds, Reels, and profiles",
   "type": "module",
@@ -19,8 +19,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --clean --external react,react-dom,@instaconnect/core",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --external react,react-dom,@instaconnect/core",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --external react,react-dom,@neerajkr1810/instaconnect-core",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --external react,react-dom,@neerajkr1810/instaconnect-core",
     "test": "vitest run --dir ../../tests/react",
     "test:coverage": "vitest run --coverage --dir ../../tests/react",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --config ../../eslint.config.js",
@@ -28,7 +28,7 @@
     "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\""
   },
   "dependencies": {
-    "@instaconnect/core": "workspace:*"
+    "@neerajkr1810/instaconnect-core": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",

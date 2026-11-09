@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import type { InstagramMedia } from "@instaconnect/core";
+import type { InstagramMedia } from "@neerajkr1810/instaconnect-core";
 import type { InstagramGridProps } from "../types/index.js";
 
 /**

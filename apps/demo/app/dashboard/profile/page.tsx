@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { InstagramProfile } from "@instaconnect/react";
+import { InstagramProfile } from "@neerajkr1810/instaconnect-react";
 
 export default function DashboardProfilePage() {
   return (
@@ -16,4 +16,3 @@ export default function DashboardProfilePage() {
     </div>
   );
 }
-

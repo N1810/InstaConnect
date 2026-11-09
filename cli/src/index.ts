@@ -57,7 +57,7 @@ INSTAGRAM_API_VERSION=v21.0
 INSTACONNECT_STATE_SECRET=replace_with_32_byte_random_hex
 `;
 
-const LIB_CLIENT_TEMPLATE = `import { InstagramClient } from "@instaconnect/core";
+const LIB_CLIENT_TEMPLATE = `import { InstagramClient } from "@neerajkr1810/instaconnect-core";
 
 export const instagram = new InstagramClient({
   appId: process.env.INSTAGRAM_APP_ID!,
@@ -68,7 +68,7 @@ export const instagram = new InstagramClient({
 });
 `;
 
-const APP_ROUTER_CALLBACK_TEMPLATE = `import { createInstagramCallbackHandler } from "@instaconnect/next/server";
+const APP_ROUTER_CALLBACK_TEMPLATE = `import { createInstagramCallbackHandler } from "@neerajkr1810/instaconnect-next/server";
 import { instagram } from "@/lib/instagram";
 
 export const GET = createInstagramCallbackHandler({
@@ -80,7 +80,7 @@ export const GET = createInstagramCallbackHandler({
 });
 `;
 
-const APP_ROUTER_CONNECT_TEMPLATE = `import { createInstagramConnectHandler } from "@instaconnect/next/server";
+const APP_ROUTER_CONNECT_TEMPLATE = `import { createInstagramConnectHandler } from "@neerajkr1810/instaconnect-next/server";
 import { instagram } from "@/lib/instagram";
 
 export const GET = createInstagramConnectHandler({
@@ -88,7 +88,7 @@ export const GET = createInstagramConnectHandler({
 });
 `;
 
-const APP_ROUTER_MEDIA_TEMPLATE = `import { createInstagramMediaHandler } from "@instaconnect/next/server";
+const APP_ROUTER_MEDIA_TEMPLATE = `import { createInstagramMediaHandler } from "@neerajkr1810/instaconnect-next/server";
 import { instagram } from "@/lib/instagram";
 
 export const GET = createInstagramMediaHandler({
@@ -96,7 +96,7 @@ export const GET = createInstagramMediaHandler({
 });
 `;
 
-const APP_ROUTER_PROFILE_TEMPLATE = `import { createInstagramProfileHandler } from "@instaconnect/next/server";
+const APP_ROUTER_PROFILE_TEMPLATE = `import { createInstagramProfileHandler } from "@neerajkr1810/instaconnect-next/server";
 import { instagram } from "@/lib/instagram";
 
 export const GET = createInstagramProfileHandler({
